@@ -1,0 +1,16 @@
+.env
+.env.local
+.venv
+.DS_Store
+.obsidian/
+fraud agent/
+audit_log.sqlite3
+*.sqlite3
+__pycache__/
+.pytest_cache/
+.next/
+.vercel/
+node_modules/
+dist/
+coverage/
+conversation-summary-and-next-steps.md
