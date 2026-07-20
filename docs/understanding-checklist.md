@@ -1,6 +1,6 @@
 # Understanding Checklist
 
-This checklist tracks what the builder should be able to explain before the project is treated as interview-ready. It is written for learning, so each item should be restated in plain English during the build.
+This checklist tracks what the builder should be able to explain before the project is treated as production-demo ready. It is written for learning, so each item should be restated in plain English during the build.
 
 ## 1. The Problem
 
@@ -35,8 +35,8 @@ This checklist tracks what the builder should be able to explain before the proj
 
 ## 4. Broader Context
 
-- [ ] Explain how the demo connects to Sierra-style journeys, traces, and guardrails.
-- [ ] Explain how the frontend connects to a Vercel-style reference app.
+- [ ] Explain how the demo connects to regulated agent journeys, traces, and guardrails.
+- [ ] Explain how the frontend connects to a modern Next.js reference app.
 - [ ] Explain why the project uses neutral branding instead of official Sierra or Vercel marks.
 - [ ] Explain why the right rail leads with operational decision state instead of decorative dashboard widgets.
 - [ ] Explain the main success metrics: auto-resolution rate, escalation accuracy, false escalation rate, guardrail override rate, PII redaction coverage, and handoff completeness.
@@ -50,6 +50,6 @@ Use these prompts before moving to the next build stage:
 1. In your own words, what problem is this system solving?
 2. What should the model be allowed to do, and what should policy code decide?
 3. When should the system ask a clarifying question instead of escalating?
-4. What would make this project credible to a Sierra employee?
+4. What would make this project credible to a product or engineering reviewer?
 5. What would you test before deploying this to Vercel and Railway?
 6. In the Netflix case, why is it powerful that the model proposed clarification but the supervisor resolved the case?

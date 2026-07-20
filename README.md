@@ -2,7 +2,7 @@
 
 This is a reference build for a regulated financial-services dispute agent. The demo shows how a customer-facing agent can use a model for language while keeping final decision authority in deterministic policy code.
 
-The core operating pattern is simple enough to explain in an interview, and strict enough to defend in a regulated setting:
+The core operating pattern is simple enough to understand quickly, and strict enough to defend in a regulated setting:
 
 ```text
 LLM proposes.
@@ -29,7 +29,7 @@ The demo has three outcomes:
 
 - `frontend/`: Next.js and TypeScript interface for Vercel.
 - `backend/`: FastAPI service for Railway.
-- `docs/reference-architecture.md`: interview-ready architecture notes.
+- `docs/reference-architecture.md`: architecture notes for the supervised dispute workflow.
 
 Runtime flow:
 
@@ -154,10 +154,8 @@ Frontend:
 - Deploy `frontend/` to Vercel.
 - Set `BACKEND_URL` to the Railway backend URL.
 
-## Interview Framing
+## Project Summary
 
-The best way to describe this project:
+This project demonstrates a supervised fraud dispute journey where the LLM handles language and structure, while deterministic policy code recomputes evidence, applies guardrails, records an audit trace, and decides whether the journey should resolve, clarify, or hand off.
 
-> I built a fraud dispute journey where the LLM handles language and structure, then a deterministic supervisor recomputes evidence, applies policy guardrails, records an audit trace, and decides whether the journey should resolve, clarify, or hand off. The frontend uses Vercel AI SDK `useChat`, the backend writes a SQLite audit record for each completed decision, and the eval harness proves the supervisor behaves correctly across controlled edge cases.
-
-The next meaningful extension is deployment hardening: Railway variables, Vercel variables, origin-specific CORS, and a short smoke test against the deployed URLs.
+The frontend uses Vercel AI SDK `useChat`, the backend writes a SQLite audit record for each completed decision, and the eval harness checks supervisor behavior across controlled edge cases.

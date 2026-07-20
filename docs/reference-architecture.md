@@ -4,12 +4,12 @@
 
 This project demonstrates a regulated-agent pattern for credit-card dispute handling. The visible product is a customer support chat. The important system is the decision machinery behind it: PII boundaries, structured model proposals, deterministic supervision, auditable traces, and human handoff payloads.
 
-The demo is designed for an interview conversation with a Sierra or Vercel audience:
+The demo is designed to show two complementary concerns:
 
-- For Sierra: it shows journeys, guardrails, traces, compliance posture, and human handoff design.
-- For Vercel: it shows a deployable Next.js reference app using Vercel AI SDK `useChat`, a clear backend boundary, and production-oriented environment handling.
+- Product workflow: journeys, guardrails, traces, compliance posture, and human handoff design.
+- Deployment architecture: a Next.js reference app using Vercel AI SDK `useChat`, a clear backend boundary, and production-oriented environment handling.
 
-Use this description in interviews:
+Short description:
 
 > A dispute journey supervisor that uses an LLM for language and reserves final regulated decision authority for deterministic policy code.
 
@@ -62,7 +62,7 @@ The Next.js frontend owns the customer experience and the demo console:
 - Renders the final customer reply.
 - Shows the journey trace, signal checks, supervisor overrides, and handoff payload.
 
-The UI is intentionally split: the left side feels like support chat, while the right side exposes the system behavior an interviewer would care about.
+The UI is intentionally split: the left side feels like support chat, while the right side exposes the system behavior an operator, reviewer, or builder would need to inspect.
 
 ### Language Layer
 
@@ -180,7 +180,7 @@ Supervisor evidence: lost or stolen card report.
 Final outcome: escalate.
 ```
 
-The interview point:
+The operational point:
 
 > The model can be persuasive. Policy must be enforceable, inspectable, and testable.
 
@@ -287,7 +287,7 @@ Recommended future eval cases:
 - Payment processor alias.
 - Mixed batch of recognized and unrecognized charges.
 
-This makes the supervisor layer visible in a repeatable way during interviews.
+This makes the supervisor layer visible in a repeatable way during evaluation and review.
 
 ## Success Metrics
 
@@ -304,12 +304,12 @@ Operational metrics:
 
 These metrics focus on safe operation, customer experience, and automation quality.
 
-## Interview Talk Track
+## Architecture Summary
 
 Short version:
 
-> I built this to show how I think about regulated AI systems. The LLM handles the language layer. The decision layer recomputes evidence, enforces policy, produces a trace, and creates a handoff when the journey leaves automation.
+The LLM handles the language layer. The decision layer recomputes evidence, enforces policy, produces a trace, and creates a handoff when the journey leaves automation.
 
 Expanded version:
 
-> The design decision I would defend is separating model fluency from policy authority. In financial services, a plausible answer is not enough. The system needs a deterministic supervisor, a rule version, inspectable signals, and a record of whether the model was overridden. That is what turns a chat demo into something closer to an operational agent.
+The key design decision is separating model fluency from policy authority. In financial services, a plausible answer is not enough. The system needs a deterministic supervisor, a rule version, inspectable signals, and a record of whether the model was overridden. That is what turns a chat interface into something closer to an operational agent.
