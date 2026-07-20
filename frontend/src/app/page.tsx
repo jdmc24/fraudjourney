@@ -585,6 +585,9 @@ export default function Home() {
             </>
           )}
         </div>
+        <p className="creator-mark" aria-label="Created by Jake McCorkle">
+          Created by Jake McCorkle
+        </p>
       </aside>
     </main>
   );
