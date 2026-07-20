@@ -12,10 +12,6 @@
   --red: #b42318;
   --rail-accent: var(--line);
   --rail-tint: #ffffff;
-  --font-body: var(--font-outfit), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    monospace;
-  --font-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
   --shadow: 0 20px 70px rgba(17, 17, 17, 0.1);
 }
 
@@ -27,7 +23,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--font-body);
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 button,
@@ -102,7 +98,7 @@ textarea {
 .eyebrow {
   margin: 0 0 5px;
   color: var(--green);
-  font-family: var(--font-mono);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -116,7 +112,7 @@ p {
 }
 
 h1 {
-  font-family: var(--font-heading);
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
   font-size: 42px;
   font-weight: 700;
   line-height: 1;
@@ -129,7 +125,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font-heading);
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
   font-size: 34px;
   font-weight: 700;
   line-height: 1;
@@ -190,7 +186,7 @@ h3 {
 .decision-compare span {
   display: block;
   color: var(--muted);
-  font-family: var(--font-mono);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
   margin-bottom: 4px;
 }
@@ -284,7 +280,7 @@ h3 {
 .metric-grid span {
   display: block;
   color: var(--muted);
-  font-family: var(--font-mono);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
   margin-bottom: 5px;
 }
@@ -556,7 +552,7 @@ h3 {
   display: block;
   margin-top: 6px;
   color: var(--muted);
-  font-family: var(--font-mono);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 11px;
   line-height: 1.25;
   overflow-wrap: anywhere;
@@ -591,7 +587,7 @@ h3 {
   background: transparent;
   color: var(--muted);
   cursor: pointer;
-  font-family: var(--font-mono);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
   font-weight: 800;
 }
@@ -646,7 +642,7 @@ h3 {
 .policy-row span {
   display: block;
   color: var(--muted);
-  font-family: var(--font-mono);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
   margin-bottom: 4px;
 }
@@ -788,7 +784,7 @@ h3 {
   border-radius: 999px;
   padding: 4px 7px;
   color: var(--muted);
-  font-family: var(--font-mono);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 11px;
 }
 
@@ -841,7 +837,7 @@ code {
   border-radius: 8px;
   background: color-mix(in srgb, var(--rail-tint) 56%, var(--panel-soft));
   padding: 10px;
-  font-family: var(--font-mono);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
 }
 
